@@ -28,19 +28,19 @@
 // })();
 
 
-const xCoord = 0;
-const yCoord = 0;
+const coord = [0,0];
 
 function showCoords(e) {
   var x = e.pageX;
   var y = e.pageY;
-  xCoord = x;
-  yCoord = y;
+  var t = e.Date.now();
+  return([x,y,t])
 }
 
-function logCoords(x) {
-  const saveToDbX = x;
-  const saveToDbY = y;
+function logCoords(c) {
+  x = c[0];
+  y = c[1];
+  t = c[2];
 
 }
 

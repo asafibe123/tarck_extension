@@ -15,3 +15,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
       }
     }
   );
+
+window.addEventListener('mousemove', function (e) {
+  console.log(e)  
+}); 
+
+  
